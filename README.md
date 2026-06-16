@@ -36,12 +36,12 @@ python3 -m json.tool presets/hiskens-comprehensive.json >/dev/null
 python3 scripts/validate_proxy_group_keys.py presets/hiskens-comprehensive.json
 ```
 
-## 线路 / 家宽代理组自动归类
+## 妙妙屋脚本覆写：线路 / 家宽自动归类
 
-如果需要让节点名包含 `线路|` 的节点自动进入 `线路` 组、包含 `家宽|` 的节点自动进入 `家宽` 组，可以对 MiaoMiaoWu v3 模板或生成后的 Clash/Mihomo YAML 运行：
+`scripts/line-home-override.js` 是给妙妙屋“脚本覆写”功能粘贴使用的 JavaScript：
 
-```bash
-python3 scripts/ensure_line_home_groups.py /path/to/template_or_subscription.yaml
-```
+- 节点名称包含 `线路|` 或 `线路 |` → 自动进入 `线路` 代理组；
+- 节点名称包含 `家宽|` 或 `家宽 |` → 自动进入 `家宽` 代理组；
+- 自动过滤 `到期`、`剩余`、`流量`、`订阅`、`expire`、`traffic` 等订阅信息节点。
 
-脚本会写入动态 filter 组，并自动备份原文件。
+每次妙妙屋生成订阅时，脚本会根据当前 `config.proxies` 重建这两个 select 组，避免手工维护组内节点列表。
