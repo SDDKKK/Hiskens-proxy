@@ -35,3 +35,13 @@ https://gh-proxy.com/https://raw.githubusercontent.com/SDDKKK/Hiskens-proxy/main
 python3 -m json.tool presets/hiskens-comprehensive.json >/dev/null
 python3 scripts/validate_proxy_group_keys.py presets/hiskens-comprehensive.json
 ```
+
+## 线路 / 家宽代理组自动归类
+
+如果需要让节点名包含 `线路|` 的节点自动进入 `线路` 组、包含 `家宽|` 的节点自动进入 `家宽` 组，可以对 MiaoMiaoWu v3 模板或生成后的 Clash/Mihomo YAML 运行：
+
+```bash
+python3 scripts/ensure_line_home_groups.py /path/to/template_or_subscription.yaml
+```
+
+脚本会写入动态 filter 组，并自动备份原文件。
