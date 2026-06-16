@@ -1,0 +1,5 @@
+{
+  "name": "example",
+  "description": "示例预设代理组配置。正式使用前请替换为妙妙屋支持的实际 JSON 结构。",
+  "proxyGroups": []
+}
