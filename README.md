@@ -9,16 +9,29 @@
 
 ## 使用方式
 
-后续可以把稳定版本放到 `presets/` 下，例如：
+当前维护的综合版预设：
 
 ```text
-presets/default.json
+presets/hiskens-comprehensive.json
 ```
 
-通过 GitHub raw 地址引用：
+GitHub raw 地址：
 
 ```text
-https://raw.githubusercontent.com/SDDKKK/Hiskens-proxy/main/presets/default.json
+https://raw.githubusercontent.com/SDDKKK/Hiskens-proxy/main/presets/hiskens-comprehensive.json
 ```
 
-> 注意：如果仓库所有者不是 `SDDKKK`，请以实际 GitHub raw 地址为准。
+如妙妙屋服务器访问 GitHub raw 不稳定，可使用 gh-proxy 包装：
+
+```text
+https://gh-proxy.com/https://raw.githubusercontent.com/SDDKKK/Hiskens-proxy/main/presets/hiskens-comprehensive.json
+```
+
+## 校验
+
+提交前可运行：
+
+```bash
+python3 -m json.tool presets/hiskens-comprehensive.json >/dev/null
+python3 scripts/validate_proxy_group_keys.py presets/hiskens-comprehensive.json
+```

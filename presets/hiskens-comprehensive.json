@@ -1,0 +1,710 @@
+[
+  {
+    "name": "ads",
+    "label": "广告拦截",
+    "emoji": "🛑",
+    "rule_name": "ads",
+    "group_label": "🛑 广告拦截",
+    "presets": [
+      "minimal",
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "category-ads-all"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "ai",
+    "label": "AI 服务",
+    "emoji": "🤖",
+    "rule_name": "ai",
+    "group_label": "🤖 AI 服务",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "openai"
+      },
+      {
+        "key": "anthropic"
+      },
+      {
+        "key": "category-ai-chat-!cn"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "youtube",
+    "label": "油管视频",
+    "emoji": "📹",
+    "rule_name": "youtube",
+    "group_label": "📹 油管视频",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "youtube"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "google",
+    "label": "谷歌服务",
+    "emoji": "🔍",
+    "rule_name": "google",
+    "group_label": "🔍 谷歌服务",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "google"
+      }
+    ],
+    "ip_rules": [
+      {
+        "key": "google"
+      }
+    ]
+  },
+  {
+    "name": "microsoft",
+    "label": "微软服务",
+    "emoji": "Ⓜ️",
+    "rule_name": "microsoft",
+    "group_label": "Ⓜ️ 微软服务",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "microsoft"
+      },
+      {
+        "key": "onedrive"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "apple",
+    "label": "苹果服务",
+    "emoji": "🍏",
+    "rule_name": "apple",
+    "group_label": "🍏 苹果服务",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "apple"
+      },
+      {
+        "key": "icloud"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "telegram",
+    "label": "电报消息",
+    "emoji": "📲",
+    "rule_name": "telegram",
+    "group_label": "📲 电报消息",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "telegram"
+      }
+    ],
+    "ip_rules": [
+      {
+        "key": "telegram"
+      }
+    ]
+  },
+  {
+    "name": "twitter",
+    "label": "推特/X",
+    "emoji": "🐦",
+    "rule_name": "twitter",
+    "group_label": "🐦 推特/X",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "twitter"
+      }
+    ],
+    "ip_rules": [
+      {
+        "key": "twitter"
+      }
+    ]
+  },
+  {
+    "name": "meta",
+    "label": "Meta 系",
+    "emoji": "📘",
+    "rule_name": "meta",
+    "group_label": "📘 Meta 系",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "facebook"
+      },
+      {
+        "key": "instagram"
+      },
+      {
+        "key": "whatsapp"
+      }
+    ],
+    "ip_rules": [
+      {
+        "key": "facebook"
+      }
+    ]
+  },
+  {
+    "name": "discord",
+    "label": "Discord",
+    "emoji": "🎙️",
+    "rule_name": "discord",
+    "group_label": "🎙️ Discord",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "discord"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "social",
+    "label": "其他社交",
+    "emoji": "💬",
+    "rule_name": "social",
+    "group_label": "💬 其他社交",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "tiktok"
+      },
+      {
+        "key": "line"
+      },
+      {
+        "key": "reddit"
+      },
+      {
+        "key": "linkedin"
+      },
+      {
+        "key": "snap"
+      },
+      {
+        "key": "pinterest"
+      },
+      {
+        "key": "tumblr"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "netflix",
+    "label": "奈飞",
+    "emoji": "🎬",
+    "rule_name": "netflix",
+    "group_label": "🎬 奈飞",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "netflix"
+      }
+    ],
+    "ip_rules": [
+      {
+        "key": "netflix"
+      }
+    ]
+  },
+  {
+    "name": "disney",
+    "label": "迪士尼+",
+    "emoji": "🏰",
+    "rule_name": "disney",
+    "group_label": "🏰 迪士尼+",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "disney"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "western-streaming",
+    "label": "欧美流媒体",
+    "emoji": "📺",
+    "rule_name": "western-streaming",
+    "group_label": "📺 欧美流媒体",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "apple-tvplus"
+      },
+      {
+        "key": "hbo"
+      },
+      {
+        "key": "hulu"
+      },
+      {
+        "key": "primevideo"
+      },
+      {
+        "key": "spotify"
+      },
+      {
+        "key": "twitch"
+      },
+      {
+        "key": "dazn"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "asian-streaming",
+    "label": "亚洲流媒体",
+    "emoji": "🎌",
+    "rule_name": "asian-streaming",
+    "group_label": "🎌 亚洲流媒体",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "bahamut"
+      },
+      {
+        "key": "biliintl"
+      },
+      {
+        "key": "niconico"
+      },
+      {
+        "key": "abema"
+      },
+      {
+        "key": "viu"
+      },
+      {
+        "key": "kktv"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "steam",
+    "label": "Steam",
+    "emoji": "🎮",
+    "rule_name": "steam",
+    "group_label": "🎮 Steam",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "steam"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "pc-gaming",
+    "label": "PC 游戏",
+    "emoji": "🖥️",
+    "rule_name": "pc-gaming",
+    "group_label": "🖥️ PC 游戏",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "epicgames"
+      },
+      {
+        "key": "ea"
+      },
+      {
+        "key": "ubisoft"
+      },
+      {
+        "key": "blizzard"
+      },
+      {
+        "key": "gog"
+      },
+      {
+        "key": "riot"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "console-gaming",
+    "label": "主机游戏",
+    "emoji": "🎯",
+    "rule_name": "console-gaming",
+    "group_label": "🎯 主机游戏",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "playstation"
+      },
+      {
+        "key": "xbox"
+      },
+      {
+        "key": "nintendo"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "code-hosting",
+    "label": "代码托管",
+    "emoji": "🐱",
+    "rule_name": "code-hosting",
+    "group_label": "🐱 代码托管",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "github"
+      },
+      {
+        "key": "gitlab"
+      },
+      {
+        "key": "atlassian"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "cloud",
+    "label": "云服务",
+    "emoji": "☁️",
+    "rule_name": "cloud",
+    "group_label": "☁️ 云服务",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "aws"
+      },
+      {
+        "key": "azure"
+      },
+      {
+        "key": "cloudflare"
+      },
+      {
+        "key": "digitalocean"
+      },
+      {
+        "key": "vercel"
+      },
+      {
+        "key": "netlify"
+      }
+    ],
+    "ip_rules": [
+      {
+        "key": "cloudflare"
+      }
+    ]
+  },
+  {
+    "name": "developer-tools",
+    "label": "开发工具",
+    "emoji": "🛠️",
+    "rule_name": "developer-tools",
+    "group_label": "🛠️ 开发工具",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "docker"
+      },
+      {
+        "key": "npmjs"
+      },
+      {
+        "key": "jetbrains"
+      },
+      {
+        "key": "stackexchange"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "storage",
+    "label": "网盘存储",
+    "emoji": "💾",
+    "rule_name": "storage",
+    "group_label": "💾 网盘存储",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "dropbox"
+      },
+      {
+        "key": "notion"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "payment",
+    "label": "支付平台",
+    "emoji": "💳",
+    "rule_name": "payment",
+    "group_label": "💳 支付平台",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "paypal"
+      },
+      {
+        "key": "stripe"
+      },
+      {
+        "key": "wise"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "crypto",
+    "label": "加密货币",
+    "emoji": "₿",
+    "rule_name": "crypto",
+    "group_label": "₿ 加密货币",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "binance"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "education",
+    "label": "教育学术",
+    "emoji": "📚",
+    "rule_name": "education",
+    "group_label": "📚 教育学术",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "category-scholar-!cn"
+      },
+      {
+        "key": "coursera"
+      },
+      {
+        "key": "udemy"
+      },
+      {
+        "key": "edx"
+      },
+      {
+        "key": "khanacademy"
+      },
+      {
+        "key": "wikimedia"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "news",
+    "label": "新闻资讯",
+    "emoji": "📰",
+    "rule_name": "news",
+    "group_label": "📰 新闻资讯",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "bbc"
+      },
+      {
+        "key": "cnn"
+      },
+      {
+        "key": "nytimes"
+      },
+      {
+        "key": "wsj"
+      },
+      {
+        "key": "bloomberg"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "shopping",
+    "label": "海淘购物",
+    "emoji": "🛒",
+    "rule_name": "shopping",
+    "group_label": "🛒 海淘购物",
+    "presets": [
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "amazon"
+      },
+      {
+        "key": "ebay"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "private",
+    "label": "私有网络",
+    "emoji": "🏠",
+    "rule_name": "private",
+    "group_label": "🏠 私有网络",
+    "presets": [
+      "minimal",
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "private"
+      }
+    ],
+    "ip_rules": [
+      {
+        "key": "private"
+      }
+    ]
+  },
+  {
+    "name": "domestic",
+    "label": "国内服务",
+    "emoji": "🔒",
+    "rule_name": "domestic",
+    "group_label": "🔒 国内服务",
+    "presets": [
+      "minimal",
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "geolocation-cn"
+      },
+      {
+        "key": "cn"
+      }
+    ],
+    "ip_rules": [
+      {
+        "key": "cn"
+      }
+    ]
+  },
+  {
+    "name": "overseas",
+    "label": "非中国",
+    "emoji": "🌍",
+    "rule_name": "overseas",
+    "group_label": "🌍 非中国",
+    "presets": [
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [
+      {
+        "key": "geolocation-!cn"
+      }
+    ],
+    "ip_rules": []
+  },
+  {
+    "name": "fallback",
+    "label": "漏网之鱼",
+    "emoji": "🐟",
+    "rule_name": "fallback",
+    "group_label": "🐟 漏网之鱼",
+    "presets": [
+      "minimal",
+      "balanced",
+      "comprehensive"
+    ],
+    "site_rules": [],
+    "ip_rules": []
+  }
+]
