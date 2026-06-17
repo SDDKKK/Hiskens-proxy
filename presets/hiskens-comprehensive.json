@@ -692,19 +692,5 @@
       }
     ],
     "ip_rules": []
-  },
-  {
-    "name": "fallback",
-    "label": "漏网之鱼",
-    "emoji": "🐟",
-    "rule_name": "fallback",
-    "group_label": "🐟 漏网之鱼",
-    "presets": [
-      "minimal",
-      "balanced",
-      "comprehensive"
-    ],
-    "site_rules": [],
-    "ip_rules": []
   }
 ]
