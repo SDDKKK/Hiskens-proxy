@@ -112,7 +112,7 @@ function main(config) {
     return out;
   }
 
-  function insertLineHomeRefs(proxies, hasLineNodes, hasHomeNodes) {
+  function insertLineHomeRefs(proxies, hasLineNodes, hasHomeNodes, includeHomeGroup) {
     var cleaned = [];
     proxies.forEach(function(name) {
       if (name === LINE_GROUP || name === HOME_GROUP) return;
@@ -126,7 +126,7 @@ function main(config) {
 
     var refs = [];
     if (hasLineNodes) refs.push(LINE_GROUP);
-    if (hasHomeNodes) refs.push(HOME_GROUP);
+    if (includeHomeGroup && hasHomeNodes) refs.push(HOME_GROUP);
 
     return dedupe(cleaned.slice(0, insertAt).concat(refs).concat(cleaned.slice(insertAt)));
   }
@@ -161,7 +161,9 @@ function main(config) {
       return !isLineOrHomeNode(name, lineSet, homeSet);
     });
 
-    group.proxies = insertLineHomeRefs(withoutRawLineHome, lineNames.length > 0, homeNames.length > 0);
+    // “自动选择”不要包含“家宽”聚合组，避免住宅/家宽节点参与自动测速选择；其他组仍统一通过“线路”/“家宽”调用。
+    var includeHomeGroup = group.name !== '♻️ 自动选择' && group.name !== '⚡ 自动选择';
+    group.proxies = insertLineHomeRefs(withoutRawLineHome, lineNames.length > 0, homeNames.length > 0, includeHomeGroup);
   });
 
   return config;
